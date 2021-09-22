@@ -1,0 +1,82 @@
+@media only screen and (min-width: 928px) {
+    
+    main{
+        background-image: url("../images/bg-pattern-desktop.svg");
+        background-size: contain;
+        display:grid;
+        height:100%;
+        grid-template-columns: minmax(500px, auto) minmax(5%, 610px);
+        grid-template-rows: 235px auto;
+        grid-template-areas:
+        "header hero"
+        "content hero";
+
+    }
+
+    .hero{
+        margin-bottom:0;
+        height:100%;
+        background-image: url("../images/hero-desktop.jpg");
+        background-position: center;
+    }
+
+    .header{
+        
+
+        &__logo{
+            width:159px;
+            margin: 65px 0 0 165px;
+        }
+    }
+
+
+    .content{
+        max-width:430px;
+        margin:0;
+        margin-left:165px;
+        margin-right:100px;
+        text-align:left;
+        padding:0;
+
+        &__heading{
+            font-size: 65px;
+            letter-spacing: 16.5px;
+            line-height: 1.075;
+            margin-bottom:0;
+            padding-bottom:1%;
+
+        }
+
+        &__text{
+            font-size:16px;
+            line-height: 1.75;
+            margin-bottom: 40px;
+        }
+
+        &__input, &__btn{
+            height:55px;
+            border-radius:999px;
+        }
+
+        &__input{
+            font-size:16px; 
+            font-weight:600;
+        }
+
+        &__btn{
+            width:100px;
+            cursor: pointer;
+
+            &:hover{
+                background:linear-gradient(135deg, hsl(0, 100%, 93%),rgb(255, 188, 188));
+            }
+        }
+
+        &__error-svg{
+            right:110px;
+            top:13.75px;
+        }
+
+    }
+
+}
