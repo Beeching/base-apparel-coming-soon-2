@@ -409,6 +409,7 @@ body {
 }
 
 .content__input {
+  -webkit-appearance: none;
   border: 1px solid #ce9797;
   background: transparent;
   width: 100%;
